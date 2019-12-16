@@ -1,0 +1,715 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>Godry</title>
+
+    <style>
+        .swiper-container {
+            padding: 20px;
+            width: 100%;
+            height: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            flex-direction: column;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+        
+        .nav-pills > li > a.active {
+    background-color: white!important;
+    color:black!important;
+    
+
+    text-decoration: none!important;
+    border-bottom: 3px solid #22CB27!important;
+
+}
+    .nav-pills > li > a {
+        color: black!important;
+    }
+.footerlinks > a{
+    text-decoration: none;
+    color: white;
+    border-right: 2px solid;    
+}
+
+.footerlinks{
+    margin-top:0px;
+    margin-bottom: 0px;
+}
+    
+    </style>
+
+
+</head>
+
+<body>
+    <div class="">
+        <div class="navigation d-flex flex-column justify-content-start"
+            style="background-image: url('assets/banner-main.jpg');background-position: center bottom;background-repeat: no-repeat;background-size: cover;">
+
+        <!--Navigation-->
+            <nav class="mt-1 mr-1 ml-1 mt-md-3 mr-md-3 ml-md-3 position absolute navbar navbar-expand-lg navbar-light bg-white navbars">
+                <a class="navbar-brand" href="#">
+                    <img src="assets\logo.png" alt="godry logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ml-auto">
+                        <a class="nav-item nav-link mr-2 active" href="#">Home <span
+                                class="sr-only">(current)</span></a>
+                        <a class="nav-item nav-link mr-2" href="#">Products</a>
+                        <a class="nav-item nav-link mr-2" href="#">Warranty</a>
+                        <a class="nav-item nav-link mr-2" href="#">Free Site Visit</a>
+                        <a class="nav-item nav-link mr-2" href="#">Contact Us</a>
+                    </div>
+                </div>
+            </nav>
+        
+        <!--Navigation-->
+
+         <!--Inside Header-->
+            <div class="">               
+                <h2 class="text-center mt-5 text-white font-weight-bolder headertext">SAY HELLO TO <br />LEAKAGE-FREE BATHROOMS
+                </h2>                
+            </div>
+
+            <!--Inside header-->
+
+        </div>
+
+        <div class="d-flex flex-column align-items-center p-5 aboutgodry">
+            <h3 class="p-3 text-white font-weight-bold">ABOUT GODRY</h3>
+            <p class="text-center mt-2">GODRY truly believes that good quality waterproofing is an essential part of any
+                home. Because, a waterproof home enables its
+                <br>occupants to live a trouble-free, healthy lifestyle.</p>
+            <p class="text-center">Our constant desire to enhance the lives of our customers is the driving force behind
+                the launch our exclusive waterproofing
+                <br>solutions brand, GODRY.</p>
+            <div class="d-flex flex-row mt-5">
+                <button class="m-2 buttonexp text-white btn">EXPLORE OUR PRODUCTS</button>
+                <button class="m-2 bg-white buttonread btn">READ OUR STORIES</button>
+            </div>
+        </div>
+
+
+        <div class="d-flex flex-column position-relative" style="background-image: url('assets/Layer 15.png');">            
+            <h3 class="text-center mt-5">AREAS OF APPLICATION</h3>
+            <div class="mt-5 mb-5 d-flex flex-md-row flex-sm-column justify-content-around">
+                <div class="">
+                    <img class="houseimage img-fluid p-2 p-md-0" src="assets\Layer 26.png" alt="">
+
+                    <div class="structure position-absolute d-none d-lg-block" onclick="structure()">
+                            <img src="assets\roundbuttons.png" alt="">
+                    </div>
+                    <div class="mobilestructure position-absolute d-lg-none" data-toggle="modal" data-target="#structuremodal">
+                            <img src="assets\roundbuttons.png" alt="">
+                    </div>
+
+                    <div class="watertanks position-absolute d-none d-lg-block" onclick="watertanks()">
+                            <img src="assets\roundbuttons.png" alt="">
+                    </div>
+                    <div class="mobilewatertanks position-absolute d-lg-none" data-toggle="modal" data-target="#watertankmodal">
+                            <img src="assets\roundbuttons.png" alt="">
+                    </div>
+
+                    <div class="roof position-absolute d-none d-lg-block" onclick="roof()">
+                            <img src="assets\roundbuttons.png" alt="">
+                    </div>
+                    <div class="mobileroof position-absolute d-lg-none" data-toggle="modal" data-target="#roofmodal">
+                            <img src="assets\roundbuttons.png" alt="">
+                    </div>
+
+                    <div class="bathrooms position-absolute d-none d-lg-block" onclick="bathroom()">
+                            <img src="assets\roundbuttons.png" alt="">
+                    </div>
+                    <div class="mobilebathrooms position-absolute d-lg-none" data-toggle="modal" data-target="#bathroommodal">
+                            <img src="assets\roundbuttons.png" alt="">
+                    </div>
+
+                    <div class="externalwall position-absolute d-none d-lg-block">
+                            <img src="assets\roundbuttons.png" alt="">
+                    </div>                    
+                    <div class="mobileexternalwall position-absolute d-lg-none" data-toggle="modal" data-target="#externalwallmodal">
+                            <img src="assets\roundbuttons.png" alt="">
+                    </div>                    
+                </div>
+
+                <!--Structure Modal-->
+
+                    <div class="modal fade" id="structuremodal" tabindex="-1" role="dialog" aria-labelledby="structuremodal" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content text-center">
+                                <div class="modal-header">
+                                <h3 class="col-12 modal-title text-center">Structure
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                 </h3>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="card-body">
+                                        <img class="card-img-top" src="assets\externalwall.png" alt="Card image cap">
+                                        <p class="card-text text-center mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo aut asperiores ad cum odit, perspiciatis dignissimos tempore sequi alias? Doloribus.</p>
+                                      </div>
+                                </div>                            
+                            </div>
+                            </div>
+                    </div>
+                <!---->
+
+        <!--watertank Modal-->
+
+                <div class="modal fade" id="watertankmodal" tabindex="-1" role="dialog" aria-labelledby="watertankmodal" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content text-center">
+                        <div class="modal-header">
+                        <h3 class="col-12 modal-title text-center">Water Tanks
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                         </h3>
+                        </div>
+                        <div class="modal-body">
+                            <div class="card-body">
+                                <img class="card-img-top" src="assets\watertanks.png" alt="Card image cap">
+                                <p class="card-text text-center mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo aut asperiores ad cum odit, perspiciatis dignissimos tempore sequi alias? Doloribus.</p>
+                              </div>
+                        </div>                            
+                    </div>
+                    </div>
+                </div>
+        <!---->
+
+        <!--roof Modal-->
+
+        <div class="modal fade" id="roofmodal" tabindex="-1" role="dialog" aria-labelledby="roofmodal" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content text-center">
+                <div class="modal-header">
+                <h3 class="col-12 modal-title text-center">Roof
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                 </h3>
+                </div>
+                <div class="modal-body">
+                    <div class="card-body">
+                        <img class="card-img-top" src="assets\roof.png" alt="Card image cap">
+                        <p class="card-text text-center mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo aut asperiores ad cum odit, perspiciatis dignissimos tempore sequi alias? Doloribus.</p>
+                      </div>
+                </div>                            
+            </div>
+            </div>
+        </div>
+        <!---->
+
+        <!--Bathrooms Modal-->
+
+        <div class="modal fade" id="bathroommodal" tabindex="-1" role="dialog" aria-labelledby="bathroommodal" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content text-center">
+                <div class="modal-header">
+                <h3 class="col-12 modal-title text-center">Bathrooms
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                 </h3>
+                </div>
+                <div class="modal-body">
+                    <div class="card-body">
+                        <img class="card-img-top" src="assets\bathrooms.png" alt="Card image cap">
+                        <p class="card-text text-center mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo aut asperiores ad cum odit, perspiciatis dignissimos tempore sequi alias? Doloribus.</p>
+                      </div>
+                </div>                            
+            </div>
+            </div>
+        </div>
+        <!---->
+
+
+        <!--External wall Modal-->
+
+        <div class="modal fade" id="externalwallmodal" tabindex="-1" role="dialog" aria-labelledby="externalwallmodal" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content text-center">
+                <div class="modal-header">
+                <h3 class="col-12 modal-title text-center">External
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                 </h3>
+                </div>
+                <div class="modal-body">
+                    <div class="card-body">
+                        <img class="card-img-top" src="assets\externalwall.png" alt="Card image cap">
+                        <p class="card-text text-center mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo aut asperiores ad cum odit, perspiciatis dignissimos tempore sequi alias? Doloribus.</p>
+                      </div>
+                </div>                            
+            </div>
+            </div>
+        </div>
+        <!---->
+
+
+                <div class="card d-none d-lg-block" id="exwallcard" style="width: 18rem;height: 28rem;">
+                    <div class="card-body">
+                      <img class="card-img-top" src="assets\externalwall.png" alt="Card image cap">
+                      <h5 class="card-title text-center mt-2">External Walls</h5>
+                      <p class="card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo aut asperiores ad cum odit, perspiciatis dignissimos tempore sequi alias? Doloribus.</p>
+                    </div>
+                </div>
+
+                <div class="card d-none position-absolute structure-card" id="structcard" style="width: 18rem;height: 28rem;">
+                    <div class="card-body">
+                      <img class="card-img-top" src="assets\structure.png" alt="Card image cap">
+                      <h5 class="card-title text-center mt-2">structure</h5>
+                      <p class="card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed hic quod ea est, ipsum magnam iure incidunt beatae eligendi ipsa.</p>
+                    </div>
+                </div>
+
+                <div class="card d-none position-absolute watertank-card" id="watrtankcard" style="width: 18rem;height: 28rem;">
+                    <div class="card-body">
+                      <img class="card-img-top" src="assets\watertanks.png" alt="Card image cap">
+                      <h5 class="card-title text-center mt-2">watertanks</h5>
+                      <p class="card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed optio architecto voluptates assumenda reprehenderit ipsa dolore alias suscipit, eos nemo.</p>
+                    </div>
+                </div>
+
+                <div class="card d-none position-absolute roof-card" id="roofcards" style="width: 18rem;height: 28rem;">
+                    <div class="card-body">
+                      <img class="card-img-top" src="assets\roof.png" alt="Card image cap">
+                      <h5 class="card-title text-center mt-2">Roof</h5>
+                      <p class="card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. In, eligendi vitae! Id dolores, magni voluptate nobis aliquid minus laborum in.</p>
+                    </div>
+                </div>
+
+                <div class="card d-none position-absolute Bathroom-card" id="bthrmscard" style="width: 18rem;height: 28rem;">
+                    <div class="card-body">
+                      <img class="card-img-top" src="assets\bathrooms.png" alt="Card image cap">
+                      <h5 class="card-title text-center mt-2">Bathrroms</h5>
+                      <p class="card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, ut amet. Enim ea a quam alias perferendis, omnis est quibusdam?</p>
+                    </div>
+                </div>
+
+
+                <!--External walls-->
+                <div id="extrwallvline" class="position-absolute verticalline-externalwalls d-lg-block d-none"></div>
+                <div id="extrwallhline" class="position-absolute horizantal-externalwalls d-lg-block d-none"></div>
+
+                 <!--bathrooms-->
+                 <div id="bathrmsvline" class="position-absolute verticalline-bathrooms d-none"></div>
+                 <div id="bthrmshline" class="position-absolute horizantal-bathrooms d-none"></div>
+
+                 <!--roof-->
+                 <div id="roofvline" class="position-absolute verticalline-roof d-none"></div>
+                 <div id="roofhline" class="position-absolute horizantal-roof d-none"></div>
+                 <div id="roofv2line" class="position-absolute verticalline2-roof d-none"></div>
+                 <div id="roofh2line" class="position-absolute horizantal2-roof d-none"></div>
+
+                <!--Structure-->
+                <div id="structurevline" class="position-absolute verticalline-structure d-none"></div>
+                 <div id="structurehline" class="position-absolute horizantal-structure d-none"></div>
+                 <div id="structurev2line" class="position-absolute verticalline2-structure d-none"></div>
+                 <div id="structureh2line" class="position-absolute horizantal2-structure d-none"></div>
+
+                 <!--watertanks-->
+                 <div id="watertankshline" class="position-absolute horizantal-watertank d-none"></div>
+                 <div id="watertanksvline" class="position-absolute verticalline-watertank d-none"></div>
+                 <div id="watertanksh2line" class="position-absolute horizantal2-watertank d-none"></div>
+            </div>
+            
+            
+        </div>
+
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <h3 class="mt-3">TESTIMONIALS</h3>
+                    <img class="rounded-circle mt-3" src="assets\Layer 13.png" alt="">
+                    <h5 class="mt-3">Max Mckinney</h5>
+                    <p class="mt-1">Product Manager/General Electric</p>
+                    <p class="p-4">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lectus sollicitudin nec
+                        amet vestibulum. Ac <br>venenatis quisque lorem lobortis sit nibh ultricies aliquam. Enim, ac
+                        felis adipiscing eleifend aliquam nullam <br>urna, vitae tellus. Habitant.”</p>
+                </div>
+
+                <div class="swiper-slide">
+                    <h3 class="mt-3">TESTIMONIALS</h3>
+                    <img class="rounded-circle mt-3" src="assets\Layer 13.png" alt="">
+                    <h5 class="mt-3">Max Mckinney</h5>
+                    <p class="mt-1">Product Manager/General Electric</p>
+                    <p class="p-4">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lectus sollicitudin nec
+                        amet vestibulum. Ac <br>venenatis quisque lorem lobortis sit nibh ultricies aliquam. Enim, ac
+                        felis adipiscing eleifend aliquam nullam <br>urna, vitae tellus. Habitant.”</p>
+                </div>
+
+                <div class="swiper-slide">
+                    <h3 class="mt-3 font-weight-bold">TESTIMONIALS</h3>
+                    <img class="rounded-circle mt-3" src="assets\Layer 13.png" alt="">
+                    <h5 class="mt-3">Max Mckinney</h5>
+                    <p class="mt-1">Product Manager/General Electric</p>
+                    <p class="p-4">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lectus sollicitudin nec
+                        amet vestibulum. Ac <br>venenatis quisque lorem lobortis sit nibh ultricies aliquam. Enim, ac
+                        felis adipiscing eleifend aliquam nullam <br>urna, vitae tellus. Habitant.”</p>
+                </div>
+
+                <div class="swiper-slide">
+                    <h3 class="mt-3 mt-sm-1">TESTIMONIALS</h3>
+                    <img class="rounded-circle mt-3 mt-sm-1" src="assets\Layer 13.png" alt="">
+                    <h5 class="mt-3 mt-sm-1">Max Mckinney</h5>
+                    <p class="mt-1">Product Manager/General Electric</p>
+                    <p class="p-4 p-sm-2">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lectus
+                        sollicitudin nec amet vestibulum. Ac <br>venenatis quisque lorem lobortis sit nibh ultricies
+                        aliquam. Enim, ac felis adipiscing eleifend aliquam nullam <br>urna, vitae tellus. Habitant.”
+                    </p>
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="container">
+
+
+            <h3 class="text-center p-4 font-weight-bold">CONTACT US</h3>
+            <div class="row">
+                <div class="col-sm-12 col-lg-8">
+                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home"
+                                role="tab" aria-controls="pills-home" aria-selected="true">Registered Office</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile"
+                                role="tab" aria-controls="pills-profile" aria-selected="false">Chennai Office</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                            aria-labelledby="pills-home-tab">
+                            <div class="mapouter">
+                                <div class="gmap_canvas"><iframe
+                                        width="600" height="300"
+                                        src="https://maps.google.com/maps?q=VNC%20Group%20Industrial%20Estate%2C%20S.Vellaipatti%20Karur%20639004%2C%20Tamilnadu%2C%20India&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                                        frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div>
+
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-6">
+                                    <img  src="assets\Layer 9.png" alt="">
+                                    <p class="d-inline ml-2">VNC Group</p>
+                                    <p>Industrial Estate, S.Vellaipatti <br>Karur 639004, Tamilnadu, India</p>
+                                </div>
+
+                                <div class="col-6 mt-1">
+                                    <div>
+                                        <img src="assets\Layer 21.png" alt="">
+                                        <p class="d-inline">1800 5993939</p>
+                                    </div>
+
+                                    <div>
+                                        <img src="assets\Layer 0.png" alt="">
+                                        <p class="d-inline">+91 4324 266366</p>
+                                    </div>
+
+                                    <div>
+                                        <img src="assets\Layer 22.png" alt="">
+                                        <p class="d-inline">godry@vncgroup.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                            aria-labelledby="pills-profile-tab">
+                            <div class="mapouter">
+                                <div class="gmap_canvas"><iframe
+                                        width="600" height="300"
+                                        src="https://maps.google.com/maps?q=vnc%20group&t=&z=19&ie=UTF8&iwloc=&output=embed"
+                                        frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div>
+
+                            </div>
+
+                            <div class="row">
+                                <div class="col-6 mt-4">
+                                    <img src="assets\Layer 9.png" alt="">
+                                    <p class="d-inline ml-2">VNC Group</p>
+                                    <p>11/4, MRC Nagar, Raja Annamalai Puram,<br>Chennai, Tamil Nadu 600028</p>
+                                </div>
+
+                                <div class="col-6 mt-4">
+                                    <div class="">
+                                        <img src="assets\Layer 21.png" alt="">
+                                        <p class="d-inline">1800 5993939</p>
+                                    </div>
+
+                                    <div>
+                                        <img src="assets\Layer 0.png" alt="">
+                                        <p class="d-inline">+91 44 2461 1373</p>
+                                    </div>
+
+                                    <div>
+                                        <img src="assets\Layer 22.png" alt="">
+                                        <p class="d-inline">godry@vncgroup.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="forms col-sm-12 col-lg-4 mt-3">
+
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="name" placeholder="Name">
+                        </div>
+
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="email" placeholder="Email">
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="subject" placeholder="Subject">
+                        </div>
+
+                        <div class="form-group">
+                            <textarea class="form-control" id="textarea" rows="3" placeholder="Message"></textarea>
+                        </div>
+
+                        <div class="form-check mb-2">
+                            <input  class="form-check-input" type="checkbox" value="" id="sitevisit">
+                            <label class="form-check-label" for="sitevisit">
+                                I need a site visit
+                            </label>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="pincode" placeholder="Pincode">
+                        </div>
+
+                            <button style="font-size: 18px;width:100%;background-color:#22CB27;border-color: #22CB27;" type="submit" class="btn btn-primary mb-2 rounded font-weight-bold">Submit</button>
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+
+        <footer class="text-white bg-dark d-flex flex-column flex-md-row justify-content-around align-items-center">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+                <img src="assets\Vector Smart Object.png" alt="">
+                <p class="mt-4 ml-2">Copyright@2019 VNC Group.<br>All Rights Reserved</p>
+            </div>
+
+            <div class="d-flex flex-column flex-lg-row justify-content-between">
+                <div class="d-flex  flex-row mr-2">
+                    <a class="text-decoration-none text-white mr-2 ml-2" href="#">Material Estimator</a>
+                    <div class="footervertical1 mt-2 ml-2"></div>
+                </div>
+
+                <div class="d-flex  flex-row mr-2"> 
+                    <a class="text-decoration-none text-white mr-2 ml-2" href="#">Complaints</a>
+                    <div class="footervertical2 mt-2 ml-2"></div>
+                </div>
+
+                <div class="d-flex  flex-row mr-2">
+                    <a class="text-decoration-none text-white mr-2 ml-2" href="#">Warranty</a>
+                    <div class="footervertical3 mt-2 ml-2"></div>
+                </div>
+
+                <div class="d-flex  flex-row mr-2">
+                    <a class="text-decoration-none text-white mr-2 ml-2" href="#">disclaimer</a>
+                    <div class="footervertical4 mt-2 ml-2"></div>
+                </div>
+
+            </div>
+
+            <div class="d-flex flex-row flex-sm-col justify-content-between align-items-center">
+                <p class="mr-2 mt-3">FOLLOW US ON</p>
+                <a href="#"><img src="assets\Layer 35.png" alt=""></a>
+            </div>
+        </footer>
+    </div>
+
+
+
+    <!-- Optional JavaScript -->
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            loop: true,
+            spaceBetween: 30,
+            keyboard: {
+                enabled: true,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+
+        /*structure*/
+        function structure(){
+
+
+            //Structure
+            let structcardelement = document.getElementById("structcard");
+            structcardelement.classList.toggle("d-block");           
+
+            let structurevlineelement = document.getElementById("structurevline");
+            structurevlineelement.classList.toggle("d-block");
+
+            let structurehlineelement = document.getElementById("structurehline");
+            structurehlineelement.classList.toggle("d-block");
+
+            let structurev2lineelement = document.getElementById("structurev2line");
+            structurev2lineelement.classList.toggle("d-block");
+
+            let structureh2lineelement = document.getElementById("structureh2line");
+            structureh2lineelement.classList.toggle("d-block");
+
+
+
+            //external wall
+            let extrwallvlineelement = document.getElementById("extrwallvline");
+            extrwallvlineelement.classList.remove("d-lg-block");
+            extrwallvlineelement.classList.toggle("d-lg-none");
+
+            let extrwallhlineelement = document.getElementById("extrwallhline");
+            extrwallhlineelement.classList.remove("d-lg-block");
+            extrwallhlineelement.classList.toggle("d-lg-none");
+
+    }
+
+
+    function watertanks(){
+            //watertank
+            let watrtankcardelement = document.getElementById("watrtankcard");
+            watrtankcardelement.classList.toggle("d-block");
+
+            let watertankshlineelement = document.getElementById("watertankshline");
+            watertankshlineelement.classList.toggle("d-block");
+
+            let watertanksvlineelement = document.getElementById("watertanksvline");
+            watertanksvlineelement.classList.toggle("d-block");
+
+            let watertanksh2lineelement = document.getElementById("watertanksh2line");
+            watertanksh2lineelement.classList.toggle("d-block");
+
+            //external wall
+            let extrwallvlineelement = document.getElementById("extrwallvline");
+            extrwallvlineelement.classList.remove("d-lg-block");
+            extrwallvlineelement.classList.toggle("d-lg-none");
+
+            let extrwallhlineelement = document.getElementById("extrwallhline");
+            extrwallhlineelement.classList.remove("d-lg-block");
+            extrwallhlineelement.classList.toggle("d-lg-none");            
+    }
+
+    function roof(){
+        //roof
+
+        let roofcardselement = document.getElementById("roofcards");
+            roofcardselement.classList.toggle("d-block");
+
+            let roofvlineelement = document.getElementById("roofvline");
+            roofvlineelement.classList.toggle("d-block");
+
+            let roofhlineelement = document.getElementById("roofhline");
+            roofhlineelement.classList.toggle("d-block");
+
+            let roofv2lineelement = document.getElementById("roofv2line");
+            roofv2lineelement.classList.toggle("d-block");
+
+            let roofh2lineelement = document.getElementById("roofh2line");
+            roofh2lineelement.classList.toggle("d-block");
+
+            //external wall
+            let extrwallvlineelement = document.getElementById("extrwallvline");
+            extrwallvlineelement.classList.remove("d-lg-block");
+            extrwallvlineelement.classList.toggle("d-lg-none");
+
+            let extrwallhlineelement = document.getElementById("extrwallhline");
+            extrwallhlineelement.classList.remove("d-lg-block");
+            extrwallhlineelement.classList.toggle("d-lg-none");
+    }
+
+    function bathroom() {
+
+        //bathroom
+
+            let bthrmscardelement = document.getElementById("bthrmscard");
+            bthrmscardelement.classList.toggle("d-block");
+
+            let bathrmsvlineelement = document.getElementById("bathrmsvline");
+            bathrmsvlineelement.classList.toggle("d-block");
+
+            let bthrmshlineelement = document.getElementById("bthrmshline");
+            bthrmshlineelement.classList.toggle("d-block");
+
+
+            //external wall
+            let extrwallvlineelement = document.getElementById("extrwallvline");
+            extrwallvlineelement.classList.remove("d-lg-block");
+            extrwallvlineelement.classList.toggle("d-lg-none");
+
+            let extrwallhlineelement = document.getElementById("extrwallhline");
+            extrwallhlineelement.classList.remove("d-lg-block");
+            extrwallhlineelement.classList.toggle("d-lg-none");
+
+    }
+    
+    </script>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
