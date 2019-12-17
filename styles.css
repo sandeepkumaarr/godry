@@ -31,7 +31,7 @@
 }
 
 .aboutgodry{
-    background-color:#22CB27;
+    background-color:#5EDF46;
 }
 
 .firstsection{
@@ -102,14 +102,14 @@
 /*externalwalls lines*/
 
 .verticalline-externalwalls{
-    border-left: 3px solid #22CB27;
+    border-left: 3px solid #5EDF46;
     height: 100px;
     left:630px;
     top:230px;
 }
 
 .horizantal-externalwalls{
-    border-top: 3px solid #22CB27;
+    border-top: 3px solid #5EDF46;
     width: 310px;
     top:230px;
     left:630px;    
@@ -118,14 +118,14 @@
 /*bathrooms lines*/
 
 .verticalline-bathrooms{
-    border-left: 3px solid #22CB27;
+    border-left: 3px solid #5EDF46;
     height: 30px;
     top:230px;
     left:540px;    
 }
 
 .horizantal-bathrooms{
-    border-top: 3px solid #22CB27;
+    border-top: 3px solid #5EDF46;
     width: 400px;
     top:230px;
     left:540px;
@@ -139,28 +139,28 @@
 /*roof lines*/
 
 .verticalline-roof{
-    border-left: 3px solid #22CB27;
+    border-left: 3px solid #5EDF46;
     height: 30px;
     top:150px;
     left:560px;
 }
 
 .horizantal-roof{
-    border-top: 3px solid #22CB27;
+    border-top: 3px solid #5EDF46;
     width: 200px;
     top:150px;
     left:560px;
 }
 
 .verticalline2-roof{
-    border-left: 3px solid #22CB27;
+    border-left: 3px solid #5EDF46;
     height: 80px;
     top:150px;
     left:760px;
 }
 
 .horizantal2-roof{
-    border-top: 3px solid #22CB27;
+    border-top: 3px solid #5EDF46;
     width: 180px;
     top:230px;
     left:760px;
@@ -174,28 +174,28 @@
 /*structure line*/
 
 .verticalline-structure{
-    border-left: 3px solid #22CB27;
+    border-left: 3px solid #5EDF46;
     height: 170px;
     top:100px;
     left:260px;
 }
 
 .horizantal-structure{
-    border-top: 3px solid #22CB27;
+    border-top: 3px solid #5EDF46;
     width: 500px;
     top:100px;
     left:260px;
 }
 
 .verticalline2-structure{
-    border-left: 3px solid #22CB27;
+    border-left: 3px solid #5EDF46;
     height: 130px;
     top:100px;
     left:760px;
 }
 
 .horizantal2-structure{
-    border-top: 3px solid #22CB27;
+    border-top: 3px solid #5EDF46;
     width: 180px;
     top:230px;
     left:760px;
@@ -209,21 +209,21 @@
 /*Watertank*/
 
 .horizantal-watertank{
-    border-top: 3px solid #22CB27;
+    border-top: 3px solid #5EDF46;
     width: 345px;
     top:122px;
     left:415px;
 }
 
 .verticalline-watertank{
-    border-left: 3px solid #22CB27;
+    border-left: 3px solid #5EDF46;
     height: 110px;
     top:120px;
     left:760px;
 }
 
 .horizantal2-watertank{
-    border-top: 3px solid #22CB27;
+    border-top: 3px solid #5EDF46;
     width: 180px;
     top:230px;
     left:760px;

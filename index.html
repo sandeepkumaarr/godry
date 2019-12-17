@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/favicon.ico" />
     <title>Godry</title>
 
     <style>
@@ -41,6 +42,10 @@
             -webkit-align-items: center;
             align-items: center;
         }
+
+        .swiper-pagination-bullet{
+            background-color:#5EDF46;
+        }
         
         .nav-pills > li > a.active {
     background-color: white!important;
@@ -48,7 +53,7 @@
     
 
     text-decoration: none!important;
-    border-bottom: 3px solid #22CB27!important;
+    border-bottom: 3px solid #5EDF46!important;
 
 }
     .nav-pills > li > a {
@@ -130,35 +135,35 @@
                 <div class="">
                     <img class="houseimage img-fluid p-2 p-md-0" src="assets\Layer 26.png" alt="">
 
-                    <div class="structure position-absolute d-none d-lg-block" onclick="structure()">
+                    <div class="structure position-absolute d-none d-lg-block" onclick="Areasofapp('structure')">
                             <img src="assets\roundbuttons.png" alt="">
                     </div>
                     <div class="mobilestructure position-absolute d-lg-none" data-toggle="modal" data-target="#structuremodal">
                             <img src="assets\roundbuttons.png" alt="">
                     </div>
 
-                    <div class="watertanks position-absolute d-none d-lg-block" onclick="watertanks()">
+                    <div class="watertanks position-absolute d-none d-lg-block" onclick="Areasofapp('watertanks')">
                             <img src="assets\roundbuttons.png" alt="">
                     </div>
                     <div class="mobilewatertanks position-absolute d-lg-none" data-toggle="modal" data-target="#watertankmodal">
                             <img src="assets\roundbuttons.png" alt="">
                     </div>
 
-                    <div class="roof position-absolute d-none d-lg-block" onclick="roof()">
+                    <div class="roof position-absolute d-none d-lg-block" onclick="Areasofapp('roof')">
                             <img src="assets\roundbuttons.png" alt="">
                     </div>
                     <div class="mobileroof position-absolute d-lg-none" data-toggle="modal" data-target="#roofmodal">
                             <img src="assets\roundbuttons.png" alt="">
                     </div>
 
-                    <div class="bathrooms position-absolute d-none d-lg-block" onclick="bathroom()">
+                    <div class="bathrooms position-absolute d-none d-lg-block" onclick="Areasofapp('bathroom')">
                             <img src="assets\roundbuttons.png" alt="">
                     </div>
                     <div class="mobilebathrooms position-absolute d-lg-none" data-toggle="modal" data-target="#bathroommodal">
                             <img src="assets\roundbuttons.png" alt="">
                     </div>
 
-                    <div class="externalwall position-absolute d-none d-lg-block">
+                    <div class="externalwall position-absolute d-none d-lg-block" onclick="Areasofapp('externalwall')">
                             <img src="assets\roundbuttons.png" alt="">
                     </div>                    
                     <div class="mobileexternalwall position-absolute d-lg-none" data-toggle="modal" data-target="#externalwallmodal">
@@ -325,8 +330,8 @@
 
 
                 <!--External walls-->
-                <div id="extrwallvline" class="position-absolute verticalline-externalwalls d-lg-block d-none"></div>
-                <div id="extrwallhline" class="position-absolute horizantal-externalwalls d-lg-block d-none"></div>
+                <div id="extrwallvline" class="position-absolute verticalline-externalwalls d-none d-lg-block"></div>
+                <div id="extrwallhline" class="position-absolute horizantal-externalwalls d-none d-lg-block"></div>
 
                  <!--bathrooms-->
                  <div id="bathrmsvline" class="position-absolute verticalline-bathrooms d-none"></div>
@@ -587,115 +592,214 @@
             },
         });
 
-        /*structure*/
-        function structure(){
+    function Areasofapp(places) {
 
+        let structcardelement = document.getElementById("structcard");
+        let structurevlineelement = document.getElementById("structurevline");
+        let structurehlineelement = document.getElementById("structurehline");
+        let structurev2lineelement = document.getElementById("structurev2line");
+        let structureh2lineelement = document.getElementById("structureh2line");
 
-            //Structure
-            let structcardelement = document.getElementById("structcard");
-            structcardelement.classList.toggle("d-block");           
+//watertanks
+        let watrtankcardelement = document.getElementById("watrtankcard");
+        let watertankshlineelement = document.getElementById("watertankshline");
+        let watertanksvlineelement = document.getElementById("watertanksvline");
+        let watertanksh2lineelement = document.getElementById("watertanksh2line");
 
-            let structurevlineelement = document.getElementById("structurevline");
-            structurevlineelement.classList.toggle("d-block");
-
-            let structurehlineelement = document.getElementById("structurehline");
-            structurehlineelement.classList.toggle("d-block");
-
-            let structurev2lineelement = document.getElementById("structurev2line");
-            structurev2lineelement.classList.toggle("d-block");
-
-            let structureh2lineelement = document.getElementById("structureh2line");
-            structureh2lineelement.classList.toggle("d-block");
-
-
-
-            //external wall
-            let extrwallvlineelement = document.getElementById("extrwallvline");
-            extrwallvlineelement.classList.remove("d-lg-block");
-            extrwallvlineelement.classList.toggle("d-lg-none");
-
-            let extrwallhlineelement = document.getElementById("extrwallhline");
-            extrwallhlineelement.classList.remove("d-lg-block");
-            extrwallhlineelement.classList.toggle("d-lg-none");
-
-    }
-
-
-    function watertanks(){
-            //watertank
-            let watrtankcardelement = document.getElementById("watrtankcard");
-            watrtankcardelement.classList.toggle("d-block");
-
-            let watertankshlineelement = document.getElementById("watertankshline");
-            watertankshlineelement.classList.toggle("d-block");
-
-            let watertanksvlineelement = document.getElementById("watertanksvline");
-            watertanksvlineelement.classList.toggle("d-block");
-
-            let watertanksh2lineelement = document.getElementById("watertanksh2line");
-            watertanksh2lineelement.classList.toggle("d-block");
-
-            //external wall
-            let extrwallvlineelement = document.getElementById("extrwallvline");
-            extrwallvlineelement.classList.remove("d-lg-block");
-            extrwallvlineelement.classList.toggle("d-lg-none");
-
-            let extrwallhlineelement = document.getElementById("extrwallhline");
-            extrwallhlineelement.classList.remove("d-lg-block");
-            extrwallhlineelement.classList.toggle("d-lg-none");            
-    }
-
-    function roof(){
-        //roof
-
+//roof
         let roofcardselement = document.getElementById("roofcards");
-            roofcardselement.classList.toggle("d-block");
+        let roofvlineelement = document.getElementById("roofvline");
+        let roofhlineelement = document.getElementById("roofhline");
+        let roofv2lineelement = document.getElementById("roofv2line");
+        let roofh2lineelement = document.getElementById("roofh2line");
 
-            let roofvlineelement = document.getElementById("roofvline");
-            roofvlineelement.classList.toggle("d-block");
+//bathrooms
+        let bthrmscardelement = document.getElementById("bthrmscard");
+        let bathrmsvlineelement = document.getElementById("bathrmsvline");
+        let bthrmshlineelement = document.getElementById("bthrmshline");
 
-            let roofhlineelement = document.getElementById("roofhline");
-            roofhlineelement.classList.toggle("d-block");
+//External wall 
+        let externalwallelement = document.getElementById("exwallcard");
+        let extrwallvlineelement = document.getElementById("extrwallvline");
+        let extrwallhlineelement = document.getElementById("extrwallhline");
 
-            let roofv2lineelement = document.getElementById("roofv2line");
-            roofv2lineelement.classList.toggle("d-block");
 
-            let roofh2lineelement = document.getElementById("roofh2line");
-            roofh2lineelement.classList.toggle("d-block");
+        if(places === 'structure') {
+            structcardelement.classList.add("d-lg-block");
+            structurevlineelement.classList.add("d-lg-block");
+            structurehlineelement.classList.add("d-lg-block");
+            structurev2lineelement.classList.add("d-lg-block");
+            structureh2lineelement.classList.add("d-lg-block");
+
+            //watertanks
+
+            watrtankcardelement.classList.remove("d-lg-block");
+            watertankshlineelement.classList.remove("d-lg-block");
+            watertanksvlineelement.classList.remove("d-lg-block");
+            watertanksh2lineelement.classList.remove("d-lg-block");
+
+
+            //roof
+            roofcardselement.classList.remove("d-lg-block");
+            roofvlineelement.classList.remove("d-lg-block");
+            roofhlineelement.classList.remove("d-lg-block");
+            roofv2lineelement.classList.remove("d-lg-block");
+            roofh2lineelement.classList.remove("d-lg-block");
+
+            //bathroom
+            bathrmsvlineelement.classList.remove("d-lg-block");
+            bthrmshlineelement.classList.remove("d-lg-block");
+
 
             //external wall
-            let extrwallvlineelement = document.getElementById("extrwallvline");
             extrwallvlineelement.classList.remove("d-lg-block");
-            extrwallvlineelement.classList.toggle("d-lg-none");
-
-            let extrwallhlineelement = document.getElementById("extrwallhline");
             extrwallhlineelement.classList.remove("d-lg-block");
-            extrwallhlineelement.classList.toggle("d-lg-none");
-    }
 
-    function bathroom() {
 
-        //bathroom
+        }
 
-            let bthrmscardelement = document.getElementById("bthrmscard");
-            bthrmscardelement.classList.toggle("d-block");
 
-            let bathrmsvlineelement = document.getElementById("bathrmsvline");
-            bathrmsvlineelement.classList.toggle("d-block");
+        if(places === 'watertanks'){
 
-            let bthrmshlineelement = document.getElementById("bthrmshline");
-            bthrmshlineelement.classList.toggle("d-block");
+            //watertanks
+
+            watrtankcardelement.classList.add("d-lg-block");
+            watertankshlineelement.classList.add("d-lg-block");
+            watertanksvlineelement.classList.add("d-lg-block");
+            watertanksh2lineelement.classList.add("d-lg-block");
+
+            //structure
+            structcardelement.classList.remove("d-lg-block");
+            structurevlineelement.classList.remove("d-lg-block");
+            structurehlineelement.classList.remove("d-lg-block");
+            structurev2lineelement.classList.remove("d-lg-block");
+            structureh2lineelement.classList.remove("d-lg-block");
+
+
+            //roof
+            roofcardselement.classList.remove("d-lg-block");
+            roofvlineelement.classList.remove("d-lg-block");
+            roofhlineelement.classList.remove("d-lg-block");
+            roofv2lineelement.classList.remove("d-lg-block");
+            roofh2lineelement.classList.remove("d-lg-block");
+
+            //bathroom
+            bthrmscardelement.classList.remove("d-lg-block")
+            bathrmsvlineelement.classList.remove("d-lg-block");
+            bthrmshlineelement.classList.remove("d-lg-block");
 
 
             //external wall
-            let extrwallvlineelement = document.getElementById("extrwallvline");
             extrwallvlineelement.classList.remove("d-lg-block");
-            extrwallvlineelement.classList.toggle("d-lg-none");
-
-            let extrwallhlineelement = document.getElementById("extrwallhline");
             extrwallhlineelement.classList.remove("d-lg-block");
-            extrwallhlineelement.classList.toggle("d-lg-none");
 
+        }
+
+        if(places==='roof'){
+
+          //roof
+            roofcardselement.classList.add("d-lg-block");
+            roofvlineelement.classList.add("d-lg-block");
+            roofhlineelement.classList.add("d-lg-block");
+            roofv2lineelement.classList.add("d-lg-block");
+            roofh2lineelement.classList.add("d-lg-block");
+
+
+            //watertanks
+
+            watrtankcardelement.classList.remove("d-lg-block");
+            watertankshlineelement.classList.remove("d-lg-block");
+            watertanksvlineelement.classList.remove("d-lg-block");
+            watertanksh2lineelement.classList.remove("d-lg-block");
+
+            //structure
+            structcardelement.classList.remove("d-lg-block");
+            structurevlineelement.classList.remove("d-lg-block");
+            structurehlineelement.classList.remove("d-lg-block");
+            structurev2lineelement.classList.remove("d-lg-block");
+            structureh2lineelement.classList.remove("d-lg-block");
+
+            //bathroom
+            bthrmscardelement.classList.remove("d-lg-block")
+            bathrmsvlineelement.classList.remove("d-lg-block");
+            bthrmshlineelement.classList.remove("d-lg-block");
+
+
+            //external wall
+            extrwallvlineelement.classList.remove("d-lg-block");
+            extrwallhlineelement.classList.remove("d-lg-block");
+
+        }
+
+        if(places ==='externalwall') {
+
+            //external wall
+            externalwallelement.classList.add("externalwallelement");
+            extrwallvlineelement.classList.add("d-lg-block");
+            extrwallhlineelement.classList.add("d-lg-block");
+
+            //roof
+            roofcardselement.classList.remove("d-lg-block");
+            roofvlineelement.classList.remove("d-lg-block");
+            roofhlineelement.classList.remove("d-lg-block");
+            roofv2lineelement.classList.remove("d-lg-block");
+            roofh2lineelement.classList.remove("d-lg-block");
+
+
+            //watertanks
+
+            watrtankcardelement.classList.remove("d-lg-block");
+            watertankshlineelement.classList.remove("d-lg-block");
+            watertanksvlineelement.classList.remove("d-lg-block");
+            watertanksh2lineelement.classList.remove("d-lg-block");
+
+            //structure
+            structcardelement.classList.remove("d-lg-block");
+            structurevlineelement.classList.remove("d-lg-block");
+            structurehlineelement.classList.remove("d-lg-block");
+            structurev2lineelement.classList.remove("d-lg-block");
+            structureh2lineelement.classList.remove("d-lg-block");
+
+            //bathroom
+            bthrmscardelement.classList.remove("d-lg-block")
+            bathrmsvlineelement.classList.remove("d-lg-block");
+            bthrmshlineelement.classList.remove("d-lg-block");
+        }
+    
+
+    if(places==='bathroom'){
+            //bathroom
+           bthrmscardelement.classList.add("d-lg-block")
+           bathrmsvlineelement.classList.add("d-lg-block");
+           bthrmshlineelement.classList.add("d-lg-block");
+   
+         //roof
+            roofcardselement.classList.remove("d-lg-block");
+            roofvlineelement.classList.remove("d-lg-block");
+            roofhlineelement.classList.remove("d-lg-block");
+            roofv2lineelement.classList.remove("d-lg-block");
+            roofh2lineelement.classList.remove("d-lg-block");
+
+
+            //watertanks
+
+            watrtankcardelement.classList.remove("d-lg-block");
+            watertankshlineelement.classList.remove("d-lg-block");
+            watertanksvlineelement.classList.remove("d-lg-block");
+            watertanksh2lineelement.classList.remove("d-lg-block");
+
+            //structure
+            structcardelement.classList.remove("d-lg-block");
+            structurevlineelement.classList.remove("d-lg-block");
+            structurehlineelement.classList.remove("d-lg-block");
+            structurev2lineelement.classList.remove("d-lg-block");
+            structureh2lineelement.classList.remove("d-lg-block");
+
+            //external wall
+            extrwallvlineelement.classList.remove("d-lg-block");
+            extrwallhlineelement.classList.remove("d-lg-block");
+
+        }
     }
     
     </script>
