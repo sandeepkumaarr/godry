@@ -1,3 +1,7 @@
+.navigation{
+    height: 100vh;
+}
+
 .body{
     font-family: 'Montserrat', sans-serif;
 }
@@ -9,9 +13,6 @@
 .areasofapp{
     width:auto;
     height:auto;
-}
-.navigation{
-    height: 100vh;
 }
 
 .groupedimage{
@@ -45,63 +46,520 @@
 }
 
 
-.structure{
+/* .structure{
     top: 265px;
     left:250px;
     cursor: pointer;
-}
+} */
 
-.mobilestructure{
-    top: 225px;
-    left:80px;
+.structure {
+    height:24px;
+    width:22px;
+    border-radius:50%;
+    background-color:#5EDF46;
     cursor: pointer;
-}
+    position:relative;
+    top:275px;
+    left:260px;
+    
+    -webkit-transition:height .25s ease, width .25s ease;
+    transition:height .25s ease, width .25s ease;
+    
+    -webkit-transform:translate(-50%,-50%);
+    transform:translate(-50%,-50%);
+  }
+  
+  .structure:before,
+  .structure:after {
+    content:'';
+    display:block;
+    position:absolute;
+    top:0; right:0; bottom:0; left:0;
+    border-radius:50%;
+    border:1px solid white;
+  }
+  
+  .structure:before {
+    -webkit-animation: ripple 2s linear infinite;
+    animation: ripple 2s linear infinite;
+  }
+  .structure:after {
+    -webkit-animation: ripple 2s linear 1s infinite;
+    animation: ripple 2s linear 1s infinite;
+  }
+  
+  
+  @-webkit-keyframes ripple{
+    0% {-webkit-transform:scale(1); }
+    75% {-webkit-transform:scale(1.75); opacity:1;}
+    100% {-webkit-transform:scale(2); opacity:0;}
+  }
+  
+  @keyframes ripple{
+    0% {transform:scale(1); }
+    75% {transform:scale(1.75); opacity:1;}
+    100% {transform:scale(2); opacity:0;}
+  }
 
-.watertanks{
-    top:110px;
-    left:400px;
+.mobilestructure {
+    height:18px;
+    width:20px;
+    border-radius:50%;
+    background-color:#5EDF46;
     cursor: pointer;
-}
+    position:relative;
+    top:235px;
+    left:90px;
+    
+    -webkit-transition:height .25s ease, width .25s ease;
+    transition:height .25s ease, width .25s ease;
+    
+    -webkit-transform:translate(-50%,-50%);
+    transform:translate(-50%,-50%);
+  }
+  
+  .mobilestructure:before,
+  .mobilestructure:after {
+    content:'';
+    display:block;
+    position:absolute;
+    top:0; right:0; bottom:0; left:0;
+    border-radius:50%;
+    border:1px solid white;
+  }
+  
+  .mobilestructure:before {
+    -webkit-animation: ripple 2s linear infinite;
+    animation: ripple 2s linear infinite;
+  }
+  .mobilestructure:after {
+    -webkit-animation: ripple 2s linear 1s infinite;
+    animation: ripple 2s linear 1s infinite;
+  }
+  
+  
+  @-webkit-keyframes ripple{
+    0% {-webkit-transform:scale(1); }
+    75% {-webkit-transform:scale(1.75); opacity:1;}
+    100% {-webkit-transform:scale(2); opacity:0;}
+  }
+  
+  @keyframes ripple{
+    0% {transform:scale(1); }
+    75% {transform:scale(1.75); opacity:1;}
+    100% {transform:scale(2); opacity:0;}
+  }
 
-.mobilewatertanks{
+
+/*watertanks*/
+
+.watertanks {
+    height:24px;
+    width:22px;
+    border-radius:50%;
+    background-color:#5EDF46;
+    cursor: pointer;
+    position:relative;
     top:120px;
+    left:410px;
+    cursor: pointer;    
+    -webkit-transition:height .25s ease, width .25s ease;
+    transition:height .25s ease, width .25s ease;
+    
+    -webkit-transform:translate(-50%,-50%);
+    transform:translate(-50%,-50%);
+  }
+  
+  .watertanks:before,
+  .watertanks:after {
+    content:'';
+    display:block;
+    position:absolute;
+    top:0; right:0; bottom:0; left:0;
+    border-radius:50%;
+    border:1px solid white;
+  }
+  
+  .watertanks:before {
+    -webkit-animation: ripple 2s linear infinite;
+    animation: ripple 2s linear infinite;
+  }
+  .watertanks:after {
+    -webkit-animation: ripple 2s linear 1s infinite;
+    animation: ripple 2s linear 1s infinite;
+  }
+  
+  
+  @-webkit-keyframes ripple{
+    0% {-webkit-transform:scale(1); }
+    75% {-webkit-transform:scale(1.75); opacity:1;}
+    100% {-webkit-transform:scale(2); opacity:0;}
+  }
+  
+  @keyframes ripple{
+    0% {transform:scale(1); }
+    75% {transform:scale(1.75); opacity:1;}
+    100% {transform:scale(2); opacity:0;}
+  }
+
+
+.mobilewatertanks {
+    height:18px;
+    width:20px;
+    border-radius:50%;
+    background-color:#5EDF46;
+    cursor: pointer;
+    position:relative;
+    top:130px;
     left:190px;
-    cursor: pointer;
-}
+    
+    -webkit-transition:height .25s ease, width .25s ease;
+    transition:height .25s ease, width .25s ease;
+    
+    -webkit-transform:translate(-50%,-50%);
+    transform:translate(-50%,-50%);
+  }
+  
+  .mobilewatertanks:before,
+  .mobilewatertanks:after {
+    content:'';
+    display:block;
+    position:absolute;
+    top:0; right:0; bottom:0; left:0;
+    border-radius:50%;
+    border:1px solid white;
+  }
+  
+  .mobilewatertanks:before {
+    -webkit-animation: ripple 2s linear infinite;
+    animation: ripple 2s linear infinite;
+  }
+  .mobilewatertanks:after {
+    -webkit-animation: ripple 2s linear 1s infinite;
+    animation: ripple 2s linear 1s infinite;
+  }
+  
+  
+  @-webkit-keyframes ripple{
+    0% {-webkit-transform:scale(1); }
+    75% {-webkit-transform:scale(1.75); opacity:1;}
+    100% {-webkit-transform:scale(2); opacity:0;}
+  }
+  
+  @keyframes ripple{
+    0% {transform:scale(1); }
+    75% {transform:scale(1.75); opacity:1;}
+    100% {transform:scale(2); opacity:0;}
+  }
 
-.roof{
-    top:164px;
-    left:550px;
-    cursor: pointer;
-}
-.mobileroof{
-    top:155px;
-    right:80px;
-    cursor: pointer;
-}
 
-.bathrooms{
-    top:245px;
-    left:530px;
-    cursor: pointer;
-}
-.mobilebathrooms{
-    top:210px;
-    right:80px;
-    cursor: pointer;
-}
 
-.externalwall{
-    top:320px;
-    left:620px;
-    cursor: pointer;
-}
+/*roof*/
 
-.mobileexternalwall{
-    top:260px;
-    right:30px;
+.roof {
+    height:24px;
+    width:22px;
+    border-radius:50%;
+    background-color:#5EDF46;
     cursor: pointer;
-}
+    position:relative;
+    top:178px;
+    left:560px;
+    
+    -webkit-transition:height .25s ease, width .25s ease;
+    transition:height .25s ease, width .25s ease;
+    
+    -webkit-transform:translate(-50%,-50%);
+    transform:translate(-50%,-50%);
+  }
+  
+  .roof:before,
+  .roof:after {
+    content:'';
+    display:block;
+    position:absolute;
+    top:0; right:0; bottom:0; left:0;
+    border-radius:50%;
+    border:1px solid white;
+  }
+  
+  .roof:before {
+    -webkit-animation: ripple 2s linear infinite;
+    animation: ripple 2s linear infinite;
+  }
+  .roof:after {
+    -webkit-animation: ripple 2s linear 1s infinite;
+    animation: ripple 2s linear 1s infinite;
+  }
+  
+  
+  @-webkit-keyframes ripple{
+    0% {-webkit-transform:scale(1); }
+    75% {-webkit-transform:scale(1.75); opacity:1;}
+    100% {-webkit-transform:scale(2); opacity:0;}
+  }
+  
+  @keyframes ripple{
+    0% {transform:scale(1); }
+    75% {transform:scale(1.75); opacity:1;}
+    100% {transform:scale(2); opacity:0;}
+  }
+
+.mobileroof {
+    height:18px;
+    width:20px;
+    border-radius:50%;
+    background-color:#5EDF46;
+    cursor: pointer;
+    position:relative;
+    top:165px;
+    right:68px;
+    
+    -webkit-transition:height .25s ease, width .25s ease;
+    transition:height .25s ease, width .25s ease;
+    
+    -webkit-transform:translate(-50%,-50%);
+    transform:translate(-50%,-50%);
+  }
+  
+  .mobileroof:before,
+  .mobileroof:after {
+    content:'';
+    display:block;
+    position:absolute;
+    top:0; right:0; bottom:0; left:0;
+    border-radius:50%;
+    border:1px solid white;
+  }
+  
+  .mobileroof:before {
+    -webkit-animation: ripple 2s linear infinite;
+    animation: ripple 2s linear infinite;
+  }
+  .mobileroof:after {
+    -webkit-animation: ripple 2s linear 1s infinite;
+    animation: ripple 2s linear 1s infinite;
+  }
+  
+  
+  @-webkit-keyframes ripple{
+    0% {-webkit-transform:scale(1); }
+    75% {-webkit-transform:scale(1.75); opacity:1;}
+    100% {-webkit-transform:scale(2); opacity:0;}
+  }
+  
+  @keyframes ripple{
+    0% {transform:scale(1); }
+    75% {transform:scale(1.75); opacity:1;}
+    100% {transform:scale(2); opacity:0;}
+  }
+
+
+
+/*Bathrooms*/
+
+.bathrooms {
+    height:24px;
+    width:22px;
+    border-radius:50%;
+    background-color:#5EDF46;
+    cursor: pointer;
+    position:relative;
+    top:255px;
+    left:540px;
+    
+    -webkit-transition:height .25s ease, width .25s ease;
+    transition:height .25s ease, width .25s ease;
+    
+    -webkit-transform:translate(-50%,-50%);
+    transform:translate(-50%,-50%);
+  }
+  
+  .bathrooms:before,
+  .bathrooms:after {
+    content:'';
+    display:block;
+    position:absolute;
+    top:0; right:0; bottom:0; left:0;
+    border-radius:50%;
+    border:1px solid white;
+  }
+  
+  .bathrooms:before {
+    -webkit-animation: ripple 2s linear infinite;
+    animation: ripple 2s linear infinite;
+  }
+  .bathrooms:after {
+    -webkit-animation: ripple 2s linear 1s infinite;
+    animation: ripple 2s linear 1s infinite;
+  }
+  
+  
+  @-webkit-keyframes ripple{
+    0% {-webkit-transform:scale(1); }
+    75% {-webkit-transform:scale(1.75); opacity:1;}
+    100% {-webkit-transform:scale(2); opacity:0;}
+  }
+  
+  @keyframes ripple{
+    0% {transform:scale(1); }
+    75% {transform:scale(1.75); opacity:1;}
+    100% {transform:scale(2); opacity:0;}
+  }
+
+.mobilebathrooms {
+    height:18px;
+    width:20px;
+    border-radius:50%;
+    background-color:#5EDF46;
+    cursor: pointer;
+    position:relative;
+    top:220px;
+    right:70px;
+    
+    -webkit-transition:height .25s ease, width .25s ease;
+    transition:height .25s ease, width .25s ease;
+    
+    -webkit-transform:translate(-50%,-50%);
+    transform:translate(-50%,-50%);
+  }
+  
+  .mobilebathrooms:before,
+  .mobilebathrooms:after {
+    content:'';
+    display:block;
+    position:absolute;
+    top:0; right:0; bottom:0; left:0;
+    border-radius:50%;
+    border:1px solid white;
+  }
+  
+  .mobilebathrooms:before {
+    -webkit-animation: ripple 2s linear infinite;
+    animation: ripple 2s linear infinite;
+  }
+  .mobilebathrooms:after {
+    -webkit-animation: ripple 2s linear 1s infinite;
+    animation: ripple 2s linear 1s infinite;
+  }
+  
+  
+  @-webkit-keyframes ripple{
+    0% {-webkit-transform:scale(1); }
+    75% {-webkit-transform:scale(1.75); opacity:1;}
+    100% {-webkit-transform:scale(2); opacity:0;}
+  }
+  
+  @keyframes ripple{
+    0% {transform:scale(1); }
+    75% {transform:scale(1.75); opacity:1;}
+    100% {transform:scale(2); opacity:0;}
+  }
+
+
+
+
+/*External wall*/
+
+.externalwall {
+    height:24px;
+    width:22px;
+    border-radius:50%;
+    background-color:#5EDF46;
+    cursor: pointer;
+    position:relative;
+    top:333px;
+    left:630px;
+    
+    -webkit-transition:height .25s ease, width .25s ease;
+    transition:height .25s ease, width .25s ease;
+    
+    -webkit-transform:translate(-50%,-50%);
+    transform:translate(-50%,-50%);
+  }
+  
+  .externalwall:before,
+  .externalwall:after {
+    content:'';
+    display:block;
+    position:absolute;
+    top:0; right:0; bottom:0; left:0;
+    border-radius:50%;
+    border:1px solid white;
+  }
+  
+  .externalwall:before {
+    -webkit-animation: ripple 2s linear infinite;
+    animation: ripple 2s linear infinite;
+  }
+  .externalwall:after {
+    -webkit-animation: ripple 2s linear 1s infinite;
+    animation: ripple 2s linear 1s infinite;
+  }
+  
+  
+  @-webkit-keyframes ripple{
+    0% {-webkit-transform:scale(1); }
+    75% {-webkit-transform:scale(1.75); opacity:1;}
+    100% {-webkit-transform:scale(2); opacity:0;}
+  }
+  
+  @keyframes ripple{
+    0% {transform:scale(1); }
+    75% {transform:scale(1.75); opacity:1;}
+    100% {transform:scale(2); opacity:0;}
+  }
+
+
+.mobileexternalwall {
+    height:18px;
+    width:20px;
+    border-radius:50%;
+    background-color:#5EDF46;
+    cursor: pointer;
+    position:relative;
+    top:270px;
+    right:20px;
+    
+    -webkit-transition:height .25s ease, width .25s ease;
+    transition:height .25s ease, width .25s ease;
+    
+    -webkit-transform:translate(-50%,-50%);
+    transform:translate(-50%,-50%);
+  }
+  
+  .mobileexternalwall:before,
+  .mobileexternalwall:after {
+    content:'';
+    display:block;
+    position:absolute;
+    top:0; right:0; bottom:0; left:0;
+    border-radius:50%;
+    border:1px solid white;
+  }
+  
+  .mobileexternalwall:before {
+    -webkit-animation: ripple 2s linear infinite;
+    animation: ripple 2s linear infinite;
+  }
+  .mobileexternalwall:after {
+    -webkit-animation: ripple 2s linear 1s infinite;
+    animation: ripple 2s linear 1s infinite;
+  }
+  
+  
+  @-webkit-keyframes ripple{
+    0% {-webkit-transform:scale(1); }
+    75% {-webkit-transform:scale(1.75); opacity:1;}
+    100% {-webkit-transform:scale(2); opacity:0;}
+  }
+  
+  @keyframes ripple{
+    0% {transform:scale(1); }
+    75% {transform:scale(1.75); opacity:1;}
+    100% {transform:scale(2); opacity:0;}
+  }
+
 
 /*externalwalls lines*/
 
@@ -264,8 +722,7 @@
         font-size: 18px;
     }
     .groupedimage{
-    
-        
+ 
         width:300px;
         height: 155px;
      }
@@ -273,9 +730,7 @@
      .navigation{
         height: 90vh;
         width:auto;
-        height:auto;
-
-    }
+        }
 
     iframe{
         width:auto;
@@ -283,13 +738,9 @@
     }
   }
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (min-width: 768px) {
     
-     .navigation{
-        height: 70vh;
-    }
-
-    .mobileroof{
+     .mobileroof{
         top:155px;
         right:210px;
         cursor: pointer;
@@ -324,32 +775,32 @@
 
   @media only screen and (max-width:320px){
     .mobilestructure{
-        top: 235px;
-        left:70px;
+        top: 245px;
+        left:80px;
         cursor: pointer;
     }
 
     .mobilewatertanks{
-        top:148px;
-        left:150px;
+        top:158px;
+        left:160px;
         cursor: pointer;
     }
 
     .mobileroof{
-        top:175px;
-        left:235px;
+        top:190px;
+        left:245px;
         cursor: pointer;
     }
 
     .mobilebathrooms{
-        top:225px;
-        left:220px;
+        top:240px;
+        left:240px;
         cursor: pointer;
     }
 
     .mobileexternalwall{
-        top:265px;
-        right:25px;
+        top:280px;
+        right:20px;
         cursor: pointer;
     }
   }
@@ -360,31 +811,31 @@
 
     .structure{
         top: 265px;
-        left:380px;
+        left:395px;
         cursor: pointer;
     }
 
     .watertanks{
-        top:110px;
+        top:120px;
         left:550px;
         cursor: pointer;
     }
 
     .roof{
-        top:164px;
-        left:685px;
+        top:174px;
+        left:700px;
         cursor: pointer;
     }
 
     .bathrooms{
-        top:245px;
-        left:670px;
+        top:255px;
+        left:680px;
         cursor: pointer;
     }
 
     .externalwall{
         top:320px;
-        left:750px;
+        left:763px;
         cursor: pointer;
     }
 
@@ -571,22 +1022,27 @@
 
 .horizantal2-watertank{
     border-top: 3px solid #5EDF46;
-    width: 794px;
+    width: 860px;
     top:230px;
     left:1050px;
 
   }
 
   .watertanks{
-    top:110px;
+    top:120px;
     left:700px;
     cursor: pointer;
 }
 
 .structure{
     top: 265px;
-    left:550px;
-    cursor: pointer;
+    left:560px;
+    cursor: pointer;    
+}
+
+.areasbuttons{
+    background-color: #5EDF46;
+    border-radius: 50%;
 }
 
 /*structure line*/
@@ -614,14 +1070,14 @@
 
 .horizantal2-structure{
     border-top: 3px solid #5EDF46;
-    width: 790px;
+    width: 850px;
     top:230px;
     left:1060px;
 }
 
 .roof{
-    top:164px;
-    left:855px;
+    top:170px;
+    left:870px;
     cursor: pointer;
 }
 
@@ -650,20 +1106,20 @@
 
 .horizantal2-roof{
     border-top: 3px solid #5EDF46;
-    width: 785px;
+    width: 845px;
     top:230px;
     left:1063px;
 }
 
 .bathrooms{
-    top:245px;
-    left:830px;
+    top:255px;
+    left:843px;
     cursor: pointer;
 }
 
 .externalwall{
-    top:320px;
-    left:910px;
+    top:330px;
+    left:920px;
     cursor: pointer;
 }
 
@@ -678,7 +1134,7 @@
 
 .horizantal-bathrooms{
     border-top: 3px solid #5EDF46;
-    width: 1005px;
+    width: 1070px;
     top:230px;
     left:840px;
 }
@@ -695,7 +1151,7 @@
 
 .horizantal-externalwalls{
     border-top: 3px solid #5EDF46;
-    width: 930px;
+    width: 995px;
     top:230px;
     left:920px;    
 }
