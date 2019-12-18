@@ -301,9 +301,9 @@
 
 .horizantal-watertank{
     border-top: 3px solid #5EDF46;
-    width: 345px;
+    width: 355px;
     top:122px;
-    left:415px;
+    left:405px;
 }
 
 .verticalline-watertank{
@@ -473,15 +473,15 @@
 .verticalline-externalwalls{
     border-left: 3px solid #5EDF46;
     height: 100px;
-    left:760px;
+    left:772px;
     top:230px;
 }
 
 .horizantal-externalwalls{
     border-top: 3px solid #5EDF46;
-    width: 610px;
+    width: 595px;
     top:230px;
-    left:760px;    
+    left:772px;    
 }
 
 /*bathrooms lines*/
@@ -490,14 +490,14 @@
     border-left: 3px solid #5EDF46;
     height: 30px;
     top:230px;
-    left:680px;    
+    left:689px;    
 }
 
 .horizantal-bathrooms{
     border-top: 3px solid #5EDF46;
-    width: 690px;
+    width: 685px;
     top:230px;
-    left:680px;
+    left:689px;
 }
 
 .Bathroom-card{
@@ -511,28 +511,28 @@
     border-left: 3px solid #5EDF46;
     height: 30px;
     top:150px;
-    left:697px;
+    left:710px;
 }
 
 .horizantal-roof{
     border-top: 3px solid #5EDF46;
     width: 200px;
     top:150px;
-    left:700px;
+    left:710px;
 }
 
 .verticalline2-roof{
     border-left: 3px solid #5EDF46;
     height: 80px;
     top:150px;
-    left:900px;
+    left:910px;
 }
 
 .horizantal2-roof{
     border-top: 3px solid #5EDF46;
     width: 470px;
     top:230px;
-    left:900px;
+    left:910px;
 }
 
 .roof-card{
@@ -592,21 +592,21 @@
 .horizantal-watertank{
     border-top: 3px solid #5EDF46;
     width: 345px;
-    top:122px;
+    top:130px;
     left:555px;
 }
 
 .verticalline-watertank{
     border-left: 3px solid #5EDF46;
     height: 108px;
-    top:122px;
+    top:130px;
     left:900px;
 }
 
 .horizantal2-watertank{
     border-top: 3px solid #5EDF46;
     width: 470px;
-    top:230px;
+    top:235px;
     left:900px;
 }
 
@@ -638,20 +638,20 @@
 .horizantal-watertank{
     border-top: 3px solid #5EDF46;
     width: 345px;
-    top:122px;
+    top:128px;
     left:705px;
 }
 
 .verticalline-watertank{
     border-left: 3px solid #5EDF46;
-    height: 108px;
-    top:122px;
+    height: 102px;
+    top:127px;
     left:1050px;
 }
 
 .horizantal2-watertank{
     border-top: 3px solid #5EDF46;
-    width: 860px;
+    width: 805px;
     top:230px;
     left:1050px;
 
@@ -716,28 +716,28 @@
     border-left: 3px solid #5EDF46;
     height: 30px;
     top:150px;
-    left:865px;
+    left:880px;
 }
 
 .horizantal-roof{
     border-top: 3px solid #5EDF46;
     width: 200px;
     top:150px;
-    left:865px;
+    left:880px;
 }
 
 .verticalline2-roof{
     border-left: 3px solid #5EDF46;
     height: 80px;
     top:150px;
-    left:1063px;
+    left:1077px;
 }
 
 .horizantal2-roof{
     border-top: 3px solid #5EDF46;
-    width: 845px;
+    width: 780px;
     top:230px;
-    left:1063px;
+    left:1077px;
 }
 
 .bathrooms{
@@ -758,14 +758,14 @@
     border-left: 3px solid #5EDF46;
     height: 30px;
     top:230px;
-    left:840px;    
+    left:855px;    
 }
 
 .horizantal-bathrooms{
     border-top: 3px solid #5EDF46;
-    width: 1070px;
+    width: 1010px;
     top:230px;
-    left:840px;
+    left:855px;
 }
 
 
@@ -774,15 +774,15 @@
 .verticalline-externalwalls{
     border-left: 3px solid #5EDF46;
     height: 100px;
-    left:920px;
+    left:929px;
     top:230px;
 }
 
 .horizantal-externalwalls{
     border-top: 3px solid #5EDF46;
-    width: 995px;
+    width: 945px;
     top:230px;
-    left:920px;    
+    left:929px;    
 }
 
 }
