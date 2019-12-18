@@ -1,3 +1,10 @@
+.navbar-nav > .nav-item:hover{
+
+    color:#5EDF46!important;
+    font-weight: 500;
+}
+
+
 .navigation{
     height: 100vh;
 }
@@ -27,13 +34,49 @@
     font-size: 20px;
 }
 
-.buttonexp{
+.opacitycards{
+    opacity: 0;
+}
+
+
+.buttonexp {
     background-color:#38118D;
+    text-decoration: none;
+}
+
+.buttonexp > a {
+    text-decoration: none;
+    color: white;
+}
+
+.buttonexp > a:hover{
+    color: black;
+}
+
+.buttonexp:hover{
+    background-color: white;
+    border: 1px solid #38118D;
+    color: black;
 }
 
 .buttonread{
-   color: #38118D;
+    background-color:white;
+    text-decoration: none;
 }
+
+.buttonread > a {
+    text-decoration: none;
+    color: black;
+}
+
+.buttonread > a:hover{
+    color:white;
+}
+
+.buttonread:hover{
+    background-color:#38118D!important;
+    border: 1px solid white;
+ }
 
 .aboutgodry{
     background-color:#5EDF46;
@@ -346,9 +389,15 @@
 }
 
 @media only screen and (max-width: 600px) {
+.buttonread{
+    font-size: 13px;
+}
+    .buttonexp{
+        font-size: 13px;
+    }
 
     .headertext{
-        font-size: 18px;
+        font-size: 22px;
     }
     .groupedimage{
  

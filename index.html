@@ -127,8 +127,8 @@
                 the launch our exclusive waterproofing
                 <br>solutions brand, GODRY.</p>
             <div class="d-flex flex-row mt-5">
-                <button class="m-2 buttonexp text-white btn">EXPLORE OUR PRODUCTS</button>
-                <button class="m-2 bg-white buttonread btn">READ OUR STORIES</button>
+                <button class="m-2 buttonexp btn"><a class="" href="#">EXPLORE OUR PRODUCTS</a></button>
+                <button class="m-2 bg-white buttonread btn"><a href="#">READ OUR STORIES</a></button>
             </div>
         </div>
 
@@ -428,10 +428,11 @@
                         <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
                             aria-labelledby="pills-home-tab">
                             <div class="mapouter">
-                                <div class="gmap_canvas"><iframe
-                                        width="600" height="300"
+                                <iframe width="650" height="350" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=VNC%20Group%20Industrial%20Estate%2C%20S.Vellaipatti%20Karur%20639004%2C%20Tamilnadu%2C%20India&key=AIzaSyDDn4sszO_I5J9PKmpdKnDBt2hioFAw67s" allowfullscreen></iframe>
+                                <!-- <div class="gmap_canvas"><iframe
+                                        width="650" height="370"
                                         src="https://maps.google.com/maps?q=VNC%20Group%20Industrial%20Estate%2C%20S.Vellaipatti%20Karur%20639004%2C%20Tamilnadu%2C%20India&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                                        frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div>
+                                        frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div> -->
 
                             </div>
                             <div class="row mt-4">
@@ -463,10 +464,11 @@
                         <div class="tab-pane fade" id="pills-profile" role="tabpanel"
                             aria-labelledby="pills-profile-tab">
                             <div class="mapouter">
-                                <div class="gmap_canvas"><iframe
-                                        width="600" height="300"
+                                <iframe width="650" height="350" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=vnc%20group%2C11%2F4%2C%20MRC%20Nagar%2C%20Raja%20Annamalai%20Puram%2CChennai%2C%20Tamil%20Nadu%20600028&key=AIzaSyDDn4sszO_I5J9PKmpdKnDBt2hioFAw67s" allowfullscreen></iframe>
+                                <!-- <div class="gmap_canvas"><iframe
+                                        width="600" height="400"
                                         src="https://maps.google.com/maps?q=vnc%20group&t=&z=19&ie=UTF8&iwloc=&output=embed"
-                                        frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div>
+                                        frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div> -->
 
                             </div>
 
@@ -541,7 +543,7 @@
                 <img src="assets\Vector Smart Object.png" alt="">
                 <div class="p-3 mt-3 d-flex d-block d-md-none flex-row flex-sm-col justify-content-between align-items-center">
                     <p class="mr-2 mt-3">FOLLOW US ON</p>
-                    <a class="" href="#"><img src="assets\Layer 35.png" alt=""></a>
+                    <a class="" href="#"><img src="assets\socialmediaicons.png" alt=""></a>
                 </div>
                 <p class="mt-4 ml-4 d-none d-md-block">Copyright@2019 VNC Group.<br>All Rights Reserved</p>
             </div>
@@ -570,7 +572,7 @@
 
             <div class="d-md-flex d-none flex-row justify-content-between align-items-center">
                 <p class="mr-2 mt-3">FOLLOW US ON</p>
-                <a class="p-sm-3 mt-lg-0" href="#"><img src="assets\Layer 35.png" alt=""></a>
+                <a class="p-sm-3 mt-lg-0" href="#"><img src="assets\socialmediaicons.png" alt=""></a>
             </div>
             <p class="p-2 d-block d-md-none">Copyright@2019 VNC Group.All Rights Reserved</p>
 
@@ -661,9 +663,10 @@
 
 
             //external wall
+            externalwallelement.classList.add("opacitycards");
             extrwallvlineelement.classList.remove("d-lg-block");
             extrwallhlineelement.classList.remove("d-lg-block");
-
+            
 
         }
 
@@ -699,6 +702,7 @@
 
 
             //external wall
+            externalwallelement.classList.add("opacitycards");
             extrwallvlineelement.classList.remove("d-lg-block");
             extrwallhlineelement.classList.remove("d-lg-block");
 
@@ -735,6 +739,7 @@
 
 
             //external wall
+            externalwallelement.classList.add("opacitycards");
             extrwallvlineelement.classList.remove("d-lg-block");
             extrwallhlineelement.classList.remove("d-lg-block");
 
@@ -743,6 +748,7 @@
         if(places ==='externalwall') {
 
             //external wall
+            externalwallelement.classList.remove("opacitycards");
             externalwallelement.classList.add("externalwallelement");
             extrwallvlineelement.classList.add("d-lg-block");
             extrwallhlineelement.classList.add("d-lg-block");
@@ -807,7 +813,7 @@
             //external wall
             extrwallvlineelement.classList.remove("d-lg-block");
             extrwallhlineelement.classList.remove("d-lg-block");
-
+            externalwallelement.classList.add("opacitycards");
         }
     }
     
