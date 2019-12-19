@@ -99,8 +99,8 @@
 .structure {
     cursor: pointer;
     position:relative;
-    top:275px;
-    left:260px;
+    top:42%;
+    left:19.3%;
     
     -webkit-transition:height .25s ease, width .25s ease;
     transition:height .25s ease, width .25s ease;
@@ -139,8 +139,8 @@
 .mobilestructure {
     cursor: pointer;
     position:relative;
-    top:220px;
-    left:83px;
+    top:43%;
+    left:22%;
     
   }
 
@@ -186,8 +186,8 @@
 .watertanks {
     cursor: pointer;
     position:relative;
-    top:110px;
-    left:390px;
+    top:16%;
+    left:29%;
   }
   
 
@@ -195,8 +195,8 @@
 .mobilewatertanks {
     cursor: pointer;
     position:relative;
-    top:120px;
-    left:180px;
+    top:22.5%;
+    left:48%;
     
   }
   
@@ -207,8 +207,8 @@
 .roof {
     cursor: pointer;
     position:relative;
-    top:165px;
-    left:550px;
+    top:24%;
+    left:40.5%;
     
   }
   
@@ -216,8 +216,8 @@
 .mobileroof {
     cursor: pointer;
     position:relative;
-    top:155px;
-    right:75px;
+    top:30%;
+    right:20%;
     
   }
   
@@ -229,8 +229,8 @@
 .bathrooms {
     cursor: pointer;
     position:relative;
-    top:245px;
-    left:530px;
+    top:36.5%;
+    left:39.3%;
     
   }
   
@@ -238,8 +238,8 @@
 .mobilebathrooms {
     cursor: pointer;
     position:relative;
-    top:210px;
-    right:88px;
+    top:40.5%;
+    right:23%;
     
   }
   
@@ -252,8 +252,13 @@
 .externalwall {
     cursor: pointer;
     position:relative;
-    top:323px;
-    left:620px;
+    top:48%;
+    left:45.5%;
+
+  }
+
+  .externalwallcard{
+      z-index: 20;
   }
   
 
@@ -261,8 +266,8 @@
 .mobileexternalwall {
     cursor: pointer;
     position:relative;
-    top:260px;
-    right:30px;
+    top:50.5%;
+    right:8%;
     
   }
   
@@ -272,135 +277,148 @@
 
 .verticalline-externalwalls{
     border-left: 3px solid #5EDF46;
-    height: 100px;
-    left:630px;
-    top:230px;
+    height: 14%;
+    left:46.4%;
+    top:34%;
+    z-index: 10;
 }
 
 .horizantal-externalwalls{
     border-top: 3px solid #5EDF46;
-    width: 326px;
-    top:230px;
-    left:630px;    
+    width: 34%;
+    top:34%;
+    left:46.4%; 
+    z-index: 10;   
 }
 
 /*bathrooms lines*/
 
 .verticalline-bathrooms{
     border-left: 3px solid #5EDF46;
-    height: 30px;
-    top:230px;
-    left:540px;    
+    height: 2%;
+    top:35%;
+    left:40%;   
+    z-index: 10;   
+ 
 }
 
 .horizantal-bathrooms{
     border-top: 3px solid #5EDF46;
-    width: 420px;
-    top:230px;
-    left:540px;
+    width: 39%;
+    top:34.5%;
+    left:40%;
+    z-index: 10;   
 }
 
 .Bathroom-card{
-    top:135px;
-    right:128px; 
+    top:19.3%;
+    right:9.8%; 
+    z-index: 20;
 }
 
 /*roof lines*/
 
 .verticalline-roof{
     border-left: 3px solid #5EDF46;
-    height: 30px;
-    top:150px;
-    left:560px;
+    height: 2%;
+    top:22.5%;
+    left:41.3%;
 }
 
 .horizantal-roof{
     border-top: 3px solid #5EDF46;
-    width: 200px;
-    top:150px;
-    left:560px;
+    width: 15.2%;
+    top:22.4%;
+    left:41.3%;
 }
 
 .verticalline2-roof{
     border-left: 3px solid #5EDF46;
-    height: 80px;
-    top:150px;
-    left:760px;
+    height: 12.6%;
+    top:22.3%;
+    left:56.3%;
 }
 
 .horizantal2-roof{
     border-top: 3px solid #5EDF46;
-    width: 200px;
-    top:230px;
-    left:760px;
+    width: 23%;
+    top:34.7%;
+    left:56.3%;
+    z-index: 10;
 }
 
 .roof-card{
-    top:135px;
-    right:128px; 
+    top:19.3%;
+    right:9.8%;
+    z-index: 20; 
 }
 
 /*structure line*/
 
 .verticalline-structure{
     border-left: 3px solid #5EDF46;
-    height: 170px;
-    top:100px;
-    left:260px;
+    height: 26%;
+    top:15%;
+    left:19.3%;
 }
 
 .horizantal-structure{
     border-top: 3px solid #5EDF46;
-    width: 500px;
-    top:100px;
-    left:260px;
+    width: 37.2%;
+    top:15%;
+    left:19.3%;
 }
 
 .verticalline2-structure{
     border-left: 3px solid #5EDF46;
-    height: 130px;
-    top:100px;
-    left:760px;
+    height: 20%;
+    top:15%;
+    left:56.3%;
 }
 
 .horizantal2-structure{
     border-top: 3px solid #5EDF46;
-    width: 200px;
-    top:230px;
-    left:760px;
+    width: 23%;
+    top:35%;
+    left:56.3%;
+    z-index: 10;
 }
 
 .structure-card{
-    top:135px;
-    right:128px;
+    top:19.3%;
+    right:9.8%;
+    z-index: 20;    
 }
 
 /*Watertank*/
 
 .horizantal-watertank{
     border-top: 3px solid #5EDF46;
-    width: 355px;
-    top:122px;
-    left:405px;
+    width: 26.3%;
+    top:17.5%;
+    left:30.2%;
 }
 
 .verticalline-watertank{
     border-left: 3px solid #5EDF46;
-    height: 108px;
-    top:122px;
-    left:760px;
+    height: 17.3%;
+    top:17.7%;
+    left:56.3%;
 }
 
 .horizantal2-watertank{
     border-top: 3px solid #5EDF46;
-    width: 200px;
-    top:230px;
-    left:760px;
+    width: 23%;
+    top:34.6%;
+    left:56.3%;
+    z-index: 10;
 }
 
 .watertank-card{
-    top:135px;
-    right:128px;
+    top:19.3%;
+    right:9.8%;
+    z-index: 20;
+    
 }
 
 .footervertical1{
@@ -426,32 +444,32 @@
 
 @media (max-width:320px){
     .mobilestructure{
-        top: 235px;
-        left:70px;
+        top: 48%;
+        left:22%;
         cursor: pointer;
     }
 
     .mobilewatertanks{
-        top:150px;
-        left:150px;
+        top:31%;
+        left:47%;
         cursor: pointer;
     }
 
     .mobileroof{
-        top:180px;
-        left:238px;
+        top:37%;
+        right: 20%;
         cursor: pointer;
     }
 
     .mobilebathrooms{
-        top:227px;
-        left:230px;
+        top:46%;
+        right:22%;
         cursor: pointer;
     }
 
     .mobileexternalwall{
-        top:267px;
-        right:20px;
+        top:54.5%;
+        right:8%;
         cursor: pointer;
     }
   }
@@ -463,7 +481,44 @@
 
 
 
-  @media (max-width: 767px) {
+  @media (max-width: 768px) {
+    
+        
+    
+  }
+
+
+  @media (min-width: 768px) and (max-width: 992px){
+    .mobileroof{
+        top:25%;
+        right:28%;
+    }
+
+    .mobilebathrooms{
+        top:37%;
+        right:30%;
+        cursor: pointer;
+    }
+
+    .mobileexternalwall{
+        top:48.5%;
+        right:19%;
+        cursor: pointer;
+    }
+
+    .mobilestructure{
+        top: 40%;
+        left:230px;
+        cursor: pointer;
+    }
+
+    .mobilewatertanks{
+        top:16.8%;
+        left:50%;
+        cursor: pointer;
+    }
+
+
     .buttonread{
         font-size: 13px;
     }
@@ -489,40 +544,7 @@
             width:auto;
             height: auto;
         }
-    
-  }
 
-
-  @media (min-width: 768px) and (max-width: 992px){
-    .mobileroof{
-        top:155px;
-        right:210px;
-        cursor: pointer;
-    }
-
-    .mobilebathrooms{
-        top:240px;
-        right:220px;
-        cursor: pointer;
-    }
-
-    .mobileexternalwall{
-        top:310px;
-        right:140px;
-        cursor: pointer;
-    }
-
-    .mobilestructure{
-        top: 255px;
-        left:230px;
-        cursor: pointer;
-    }
-
-    .mobilewatertanks{
-        top:100px;
-        left:370px;
-        cursor: pointer;
-    }
 
   }
 
@@ -531,116 +553,118 @@
     /*structure line*/
 
         .structure{
-            top: 265px;
-            left: 160px;
+            top: 41%;
+            left: 17%;
             cursor: pointer;
         }
 
         .structure-card{
-            top:135px;
-            right:20px;
+            top:20%;
+            right:5%;
         }
 
         .verticalline-structure{
         border-left: 3px solid #5EDF46;
-        height: 170px;
-        top:100px;
-        left:160px;
+        height: 24.5%;
+        top:14.7%;
+        left:16.8%;
         }
 
         .horizantal-structure{
         border-top: 3px solid #5EDF46;
-        width: 450px;
-        top:100px;
-        left:160px;
+        width: 43%;
+        top:14.5%;
+        left:16.9%;
         }
 
         .verticalline2-structure{
         border-left: 3px solid #5EDF46;
-        height: 130px;
-        top:100px;
-        left:610px;
+        height: 20%;
+        top:15%;
+        left:59.6%;
         }
 
         .horizantal2-structure{
         border-top: 3px solid #5EDF46;
-        width: 110px;
-        top:230px;
-        left:610px;
+        width: 20%;
+        top:35%;
+        left:59.6%;
+        
         }
 
     /*Watertank*/
 
     .watertank-card{
-        top:135px;
-        right:20px;
-    }
+        top:20%;
+        right:5%;
+   }
     
     .watertanks{
-        top:100px;
-        left:320px;
+        top:16%;
+        left:31%;
         cursor: pointer;
     }
 
     .horizantal-watertank{
         border-top: 3px solid #5EDF46;
-        width: 290px;
-        top:110px;
-        left:320px;
+        width: 27.8%;
+        top:18%;
+        left:32%;
     }
 
     .verticalline-watertank{
     border-left: 3px solid #5EDF46;
-    height: 120px;
-    top:110px;
-    left:609px;
+    height: 16.5%;
+    top:18%;
+    left:59.6%;
     }
 
     .horizantal2-watertank{
     border-top: 3px solid #5EDF46;
-    width: 120px;
-    top:230px;
-    left:609px;
-    }
-        /*roof*/
+    width: 18%;
+    top:34%;
+    left:59.6%;
+    } 
+    
+    /*roof*/
 
         .roof{
-            top:164px;
-            left:465px;
+            top:24%;
+            left:45.4%;
             cursor: pointer;
         }
 
         .roof-card{
-            top:135px;
-            right:20px; 
-        }
+            top:20%;
+            right:5%;
+       }
 
         .verticalline-roof{
         border-left: 3px solid #5EDF46;
-        height: 30px;
-        top:150px;
-        left:475px;
+        height: 3%;
+        top:22.3%;
+        left:46.4%;
         }
 
         .horizantal-roof{
         border-top: 3px solid #5EDF46;
-        width: 140px;
-        top:150px;
-        left:475px;
+        width: 14%;
+        top:22%;
+        left:46.4%;
         }
 
         .verticalline2-roof{
         border-left: 3px solid #5EDF46;
-        height: 80px;
-        top:150px;
-        left:615px;
+        height: 13%;
+        top:22%;
+        left:60.2%;
         }
 
         .horizantal2-roof{
         border-top: 3px solid #5EDF46;
-        width: 130px;
-        top:230px;
-        left:615px;
+        width: 16%;
+        top:35%;
+        left:60.2%;
         }
 
         /*Bathrooms*/
@@ -652,31 +676,34 @@
         }
     
         .Bathroom-card{
-            top:135px;
-            right:20px; 
-        }
+            top:20%;
+            right:5%;
+       }
         
         .verticalline-bathrooms{
             border-left: 3px solid #5EDF46;
-            height: 30px;
-            top:230px;
-            left:470px;    
+            height: 3.3%;
+            top:34.5%;
+            left:46%;    
         }
         
         .horizantal-bathrooms{
             border-top: 3px solid #5EDF46;
-            width: 270px;
-            top:230px;
-            left:470px;
+            width: 28%;
+            top:34.5%;
+            left:46%;
+            
         }
 
         /*External wall*/
 
      .externalwall{
-            top:320px;
+            top:48%;
             left:533px;
             cursor: pointer;
         }
+
+
     
     .verticalline-externalwalls{
         border-left: 3px solid #5EDF46;
@@ -707,35 +734,35 @@
 
         /*externalwalls lines*/
 
-        .horizantal-externalwalls{    
+        /* .horizantal-externalwalls{    
             width: 272px;      
-        }
+        } */
 
 
         /*bathrooms lines*/
 
-        .horizantal-bathrooms{
+        /* .horizantal-bathrooms{
             width: 350px;
         
-        }
+        } */
 
         /*roof lines*/
-        .horizantal2-roof{
+        /* .horizantal2-roof{
             width: 128px;
         
-        }
+        } */
 
 
         /*structure line*/
-        .horizantal2-structure{
+        /* .horizantal2-structure{
             width: 120px;
-        }
+        } */
 
 
         /*Watertank lines*/
-        .horizantal2-watertank{
+        /* .horizantal2-watertank{
             width: 130px;
-            }
+            } */
 
 
 
@@ -744,42 +771,42 @@
 
         /*externalwalls lines*/
 
-.horizantal-externalwalls{    
+/* .horizantal-externalwalls{    
     width: 300px;      
-}
+} */
 
 
 /*bathrooms lines*/
 
-.horizantal-bathrooms{
+/* .horizantal-bathrooms{
     width: 388px;
   
-}
+} */
 
 /*roof lines*/
-.horizantal2-roof{
+/* .horizantal2-roof{
     width: 170px;
    
-}
+} */
 
 
 /*structure line*/
-.horizantal2-structure{
+/* .horizantal2-structure{
     width: 170px;
-   }
+   } */
 
 
 /*Watertank lines*/
-.horizantal2-watertank{
+/* .horizantal2-watertank{
     width: 170px;
-    }
+    } */
         
 
   }
 
   @media (min-width: 1400px) and (max-width: 1560px){
 
-    
+/*     
             .structure{
                 top:275px;
                 left:270px;
@@ -810,11 +837,11 @@
             width: 265px;
             top:230px;
             left:770px;
-            }
+            } */
 
 /*Watertanks*/
 
-            .watertanks{
+            /* .watertanks{
                     top:110px;
                     left:420px;
                     cursor: pointer;
@@ -839,10 +866,10 @@
                 width: 260px;
                 top:230px;
                 left:780px;
-            }
+            } */
 
 /*roof*/
-       .roof{
+       /* .roof{
                 top:160px;
                 left:570px;
                 cursor: pointer;
@@ -874,10 +901,10 @@
             width: 260px;
             top:230px;
             left:780px;
-        }
+        } */
 
 /*Bathrooms*/
-        .bathrooms {
+        /* .bathrooms {
             cursor: pointer;
             position:relative;
             top:245px;
@@ -897,15 +924,15 @@
             width: 470px;
             top:230px;
             left:570px;
-        }
+        } */
 /*External wall*/ 
 
-.horizantal-externalwalls{
+/* .horizantal-externalwalls{
     border-top: 3px solid #5EDF46;
     width: 380px;
     top:230px;
     left:630px;    
-}
+} */
 
         
         
@@ -913,7 +940,7 @@
   
   @media (min-width: 1600px) and (max-width: 1919px){
 
-            .structure{
+            /* .structure{
                 top:275px;
                 left:320px;
             }
@@ -943,11 +970,11 @@
             width: 375px;
             top:230px;
             left:820px;
-            }
+            } */
 
         /*Watertanks*/
 
-            .watertanks{
+            /* .watertanks{
                     top:110px;
                     left:450px;
                     cursor: pointer;
@@ -972,10 +999,10 @@
                 width: 385px;
                 top:230px;
                 left:805px;
-            }
+            } */
 
         /*roof*/
-        .roof{
+        /* .roof{
                 top:160px;
                 left:610px;
                 cursor: pointer;
@@ -1007,10 +1034,10 @@
             width: 380px;
             top:230px;
             left:820px;
-        }
+        } */
 
         /*Bathrooms*/
-        .bathrooms {
+        /* .bathrooms {
             cursor: pointer;
             position:relative;
             top:245px;
@@ -1030,10 +1057,10 @@
             width: 580px;
             top:230px;
             left:610px;
-        }
+        } */
         /*External wall*/ 
 
-        .externalwall {
+        /* .externalwall {
             cursor: pointer;
             position:relative;
             top:318px;
@@ -1052,7 +1079,7 @@
                 width: 445px;
                 top:230px;
                 left:680px;    
-                }
+                } */
         
 
 
@@ -1062,35 +1089,35 @@
 
   }
 
-  @media only screen and (min-width:1920px){
+  @media screen and (min-width:1920px){
 
     .structure{
-        top: 270px;
-        left:395px;
+        top: 41.6%;
+        left:21%;
         cursor: pointer;
     }
 
     .watertanks{
-        top:105px;
-        left:550px;
+        top:15.5%;
+        left:28%;
         cursor: pointer;
     }
 
     .roof{
-        top:160px;
-        left:690px;
+        top:24%;
+        left:36%;
         cursor: pointer;
     }
 
     .bathrooms{
-        top:245px;
-        left:680px;
+        top:36%;
+        left:35%;
         cursor: pointer;
     }
 
     .externalwall{
-        top:320px;
-        left:763px;
+        top:47%;
+        left:40%;
         cursor: pointer;
     }
 
@@ -1098,105 +1125,105 @@
 
 .verticalline-externalwalls{
     border-left: 3px solid #5EDF46;
-    height: 100px;
-    left:772px;
-    top:230px;
+    height: 13%;
+    left:40.5%;
+    top:35%;
 }
 
 .horizantal-externalwalls{
     border-top: 3px solid #5EDF46;
-    width: 595px;
-    top:230px;
-    left:772px;    
+    width: 38%;
+    top:35%;
+    left:40.5%;    
 }
 
 /*bathrooms lines*/
 
 .verticalline-bathrooms{
     border-left: 3px solid #5EDF46;
-    height: 30px;
-    top:230px;
-    left:689px;    
+    height: 2%;
+    top:34%;
+    left:35.5%;    
 }
 
 .horizantal-bathrooms{
     border-top: 3px solid #5EDF46;
-    width: 685px;
-    top:230px;
-    left:689px;
+    width: 47%;
+    top:34%;
+    left:35.7%;
 }
 
-.Bathroom-card{
+/* .Bathroom-card{
     top:135px;
     right:128px; 
-}
+} */
 
 /*roof lines*/
 
 .verticalline-roof{
     border-left: 3px solid #5EDF46;
-    height: 30px;
-    top:150px;
-    left:700px;
+    height: 2%;
+    top:22.6%;
+    left:36.4%;
 }
 
 .horizantal-roof{
     border-top: 3px solid #5EDF46;
-    width: 210px;
-    top:150px;
-    left:700px;
+    width: 11.1%;
+    top:22.3%;
+    left:36.4%;
 }
 
 .verticalline2-roof{
     border-left: 3px solid #5EDF46;
-    height: 80px;
-    top:150px;
-    left:910px;
+    height: 12.3%;
+    top:22.3%;
+    left:47.4%;
 }
 
 .horizantal2-roof{
     border-top: 3px solid #5EDF46;
-    width: 470px;
-    top:230px;
-    left:910px;
+    width: 35%;
+    top:34.7%;
+    left:47.4%;
 }
 
-.roof-card{
+/* .roof-card{
     top:135px;
     right:128px; 
-}
+} */
 
 /*structure line*/
 
 .verticalline-structure{
     border-left: 3px solid #5EDF46;
-    height: 170px;
-    top:100px;
-    left:395px;
+    height: 27%;
+    top:15%;
+    left:20.8%;
 }
 
 .horizantal-structure{
     border-top: 3px solid #5EDF46;
-    width: 494px;
-    top:100px;
-    left:398px;
+    width: 25.6%;
+    top:14.5%;
+    left:20.8%;
 }
 
 .verticalline2-structure{
     border-left: 3px solid #5EDF46;
-    height: 130px;
-    top:100px;
-    left:890px;
+    height: 20.3%;
+    top:14.5%;
+    left:46.3%;
 }
 
 .horizantal2-structure{
     border-top: 3px solid #5EDF46;
-    width: 480px;
-    top:230px;
-    left:890px;
+    width: 36%;
+    top:34.4%;
+    left:46.4%;
 }
 
-.Bathroom-card{
+/* .Bathroom-card{
     top:136px;
     right:272px; 
 }
@@ -1211,29 +1238,29 @@
 .watertank-card{
     top:136px;
     right:272px; 
-}
+} */
 
 /*Watertank*/
 
 .horizantal-watertank{
     border-top: 3px solid #5EDF46;
-    width: 345px;
-    top:113px;
-    left:555px;
+    width: 18%;
+    top:17%;
+    left:29%;
 }
 
 .verticalline-watertank{
     border-left: 3px solid #5EDF46;
-    height: 122px;
-    top:113px;
-    left:900px;
+    height: 18.4%;
+    top:17.3%;
+    left:46.8%;
 }
 
 .horizantal2-watertank{
     border-top: 3px solid #5EDF46;
-    width: 470px;
-    top:235px;
-    left:900px;
+    width: 35%;
+    top:35.4%;
+    left:46.8%;
 }
 
     
@@ -1242,65 +1269,63 @@
 
   @media only screen and (min-width:2560px){
     .Bathroom-card{
-        top:135px;
-        right:428px; 
+        top:23.5%;
+        right:17%; 
     }
 
     .roof-card{
-        top:136px;
-        right:428px; 
+        top:23.5%;
+        right:17%; 
     }
     .structure-card{
-        top:136px;
-        right:428px; 
+        top:23.5%;
+        right:17%; 
     }
     .watertank-card{
-        top:136px;
-        right:428px; 
+        top:23.5%;
+        right:17%; 
     }
 
     /*Watertank*/
 
-.horizantal-watertank{
-    border-top: 3px solid #5EDF46;
-    width: 345px;
-    top:128px;
-    left:705px;
-}
-
-.verticalline-watertank{
-    border-left: 3px solid #5EDF46;
-    height: 102px;
-    top:127px;
-    left:1050px;
-}
-
-.horizantal2-watertank{
-    border-top: 3px solid #5EDF46;
-    width: 805px;
-    top:230px;
-    left:1050px;
-
-  }
-
   .watertanks{
-    top:120px;
-    left:700px;
+    top:16%;
+    left:27.3%;
     cursor: pointer;
 }
+
+    .horizantal-watertank{
+            border-top: 3px solid #5EDF46;
+            width: 13.1%;
+            top:18%;
+            left:28%;
+        }
+
+        .verticalline-watertank{
+            border-left: 3px solid #5EDF46;
+            height: 16.8%;
+            top:18%;
+            left:41%;
+        }
+
+        .horizantal2-watertank{
+            border-top: 3px solid #5EDF46;
+            width: 35.5%;
+            top:34.5%;
+            left:41%;
+
+         
+        }
+
+
+
+/*structure line*/
 
 .structure{
     top: 265px;
     left:560px;
     cursor: pointer;    
 }
-
-.areasbuttons{
-    background-color: #5EDF46;
-    border-radius: 50%;
-}
-
-/*structure line*/
 
 .verticalline-structure{
     border-left: 3px solid #5EDF46;
@@ -1325,10 +1350,13 @@
 
 .horizantal2-structure{
     border-top: 3px solid #5EDF46;
-    width: 850px;
+    width: 880px;
     top:230px;
     left:1060px;
 }
+
+
+/*roof lines*/
 
 .roof{
     top:160px;
@@ -1336,7 +1364,6 @@
     cursor: pointer;
 }
 
-/*roof lines*/
 
 .verticalline-roof{
     border-left: 3px solid #5EDF46;
@@ -1361,10 +1388,15 @@
 
 .horizantal2-roof{
     border-top: 3px solid #5EDF46;
-    width: 780px;
+    width: 900px;
     top:230px;
     left:1077px;
+  
 }
+
+
+
+/*bathrooms lines*/
 
 .bathrooms{
     top:245px;
@@ -1372,13 +1404,6 @@
     cursor: pointer;
 }
 
-.externalwall{
-    top:320px;
-    left:920px;
-    cursor: pointer;
-}
-
-/*bathrooms lines*/
 
 .verticalline-bathrooms{
     border-left: 3px solid #5EDF46;
@@ -1389,13 +1414,21 @@
 
 .horizantal-bathrooms{
     border-top: 3px solid #5EDF46;
-    width: 1010px;
+    width: 1110px;
     top:230px;
     left:855px;
+   
 }
 
 
 /*externalwalls lines*/
+
+.externalwall{
+    top:320px;
+    left:920px;
+    cursor: pointer;
+}
+
 
 .verticalline-externalwalls{
     border-left: 3px solid #5EDF46;
@@ -1406,9 +1439,9 @@
 
 .horizantal-externalwalls{
     border-top: 3px solid #5EDF46;
-    width: 945px;
+    width: 1050px;
     top:230px;
-    left:929px;    
+    left:929px; 
 }
 
 }
